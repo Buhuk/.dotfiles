@@ -116,12 +116,15 @@ alias config="cd ~/.config"
 # Environment variables
 export PATH=$PATH:~/.local/bin # Para que funcione fd
 
+# Control + R - Muestra lista de comandos usados y escribe el seleccionado
 export FZF_DEFAULT_COMMAND='fd --type f --color=never --hidden'
 export FZF_DEFAULT_OPTS='--no-height --color=gutter:-1'
 
+# Control + T - Muestra lista de archivos y vista previa, escribe la ruta seleccionada 
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :50 {}'"
 
+# ALT+C - Muestra lista de carpetas, va a la carpeta elegida
 export FZF_ALT_C_COMMAND='fd --type d . --color=never --hidden'
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
 
