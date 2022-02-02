@@ -45,8 +45,9 @@ call plug#end()
 " CoC Config File
 source ~/.config/coc.config
 
-colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
+set t_Co=256
+colorscheme gruvbox
 let NERDTreeQuitOnOpen=1
 let g:user_emmet_leader_key=','
 
