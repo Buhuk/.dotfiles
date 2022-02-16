@@ -74,6 +74,7 @@ plugins=(
   git
   zsh-autosuggestions
   fzf
+  docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
